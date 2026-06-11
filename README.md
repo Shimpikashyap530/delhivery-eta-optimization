@@ -2,7 +2,7 @@
 
 Graph‑based ETA prediction and bottleneck analysis.
 
-[Live dashboard](https://yourusername-delhivery-eta-optimization.streamlit.app) (update after deployment)
+[Live dashboard]([https://yourusername-delhivery-eta-optimization.streamlit.app](https://delhivery-eta-optimization-yvvahmmn9a9xzfh3punncn.streamlit.app/)) 
 
 ## Results
 
