@@ -20,20 +20,20 @@ DELHIVERY_BLUE = "#004d99"
 # ── Load Data & Models (cached) ─────────────────────────────────────
 @st.cache_data
 def load_all():
-    edges_df = pd.read_csv('edges_data.csv')
-    hub_metrics = pd.read_csv('hub_metrics.csv')
-    tradeoff = pd.read_csv('ftl_carting_tradeoff.csv')
+    edges_df = pd.read_csv('data/edges_data.csv')
+    hub_metrics = pd.read_csv('data/hub_metrics.csv')
+    tradeoff = pd.read_csv('data/ftl_carting_tradeoff.csv')
     return edges_df, hub_metrics, tradeoff
 
 @st.cache_resource
 def load_models():
     # ETA model (XGBoost + Graph from Phase 6)
-    eta_model = joblib.load('eta_model_xgb_graph.pkl')
+    eta_model = joblib.load('models/eta_model_xgb_graph.pkl')
     # FTL vs Carting classifier (from Phase 7)
-    clf = joblib.load('route_classifier.pkl')
-    clf_features = joblib.load('route_classifier_features.pkl')
+    clf = joblib.load('models/route_classifier.pkl')
+    clf_features = joblib.load('models/route_classifier_features.pkl')
     # Deployment artifacts (contains feature lists and fill values)
-    deploy = joblib.load('deployment_artifacts.pkl')
+    deploy = joblib.load('models/deployment_artifacts.pkl')
     return eta_model, clf, clf_features, deploy
 
 edges_df, hub_metrics, tradeoff = load_all()

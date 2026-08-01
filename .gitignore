@@ -1,0 +1,24 @@
+# Personal / non-project files
+strategy_memo.docx
+
+# Intermediate model artifacts (training-only, not loaded by app.py)
+graphs/
+models/model_xgb_graph.pkl
+models/model_xgb_baseline.pkl
+models/model_lgb_graph.pkl
+models/model_segmented.pkl
+models/model_stack_meta.pkl
+models/feature_matrices.pkl
+models/feature_lists.pkl
+models/pca_embeddings.pkl
+models/predictions_v2.pkl
+models/targets_v2.pkl
+
+# Intermediate data files (not loaded by app.py)
+data/chronic_corridors.csv
+data/node_embeddings_pca20.csv
+
+# NOTE: the following ARE loaded by app.py at runtime - do NOT ignore them:
+#   data/edges_data.csv, data/hub_metrics.csv, data/ftl_carting_tradeoff.csv
+#   models/eta_model_xgb_graph.pkl, models/route_classifier.pkl,
+#   models/route_classifier_features.pkl, models/deployment_artifacts.pkl
