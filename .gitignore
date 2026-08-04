@@ -18,7 +18,7 @@ models/targets_v2.pkl
 data/chronic_corridors.csv
 data/node_embeddings_pca20.csv
 
-# NOTE: the following ARE loaded by app.py at runtime - do NOT ignore them:
+# NOTE: the following ARE loaded by app.py at runtime :
 #   data/edges_data.csv, data/hub_metrics.csv, data/ftl_carting_tradeoff.csv
 #   models/eta_model_xgb_graph.pkl, models/route_classifier.pkl,
 #   models/route_classifier_features.pkl, models/deployment_artifacts.pkl
