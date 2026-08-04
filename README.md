@@ -79,8 +79,9 @@ Classifier Accuracy: 93% (Random Forest with dispatch‑time features)
 URL: https://delhivery-eta-optimization-yvvahmmn9a9xzfh3punncn.streamlit.app/
 
 
-## 📁 Repository Structure
-text
+## Repository Structure
+
+```text
 delhivery-eta-optimization/
 ├── app.py                          # Streamlit dashboard
 ├── requirements.txt                # Python dependencies
@@ -102,6 +103,7 @@ delhivery-eta-optimization/
     ├── feature_importance_best_model.png
     ├── bottleneck_summary.json
     └── ... (other .png files)
+```
 
 
 ## Results Summary
@@ -115,5 +117,4 @@ FTL vs Carting: Classifier accuracy 93%; FTL saves 19–147 min on routes >50 km
 
 Revenue‑at‑Risk: Estimated ₹4.6 crore/month (assuming ₹30/min delay cost).
 
-🔗 Live Demo
-Streamlit Dashboard: https://delhivery-eta-optimization-yvvahmmn9a9xzfh3punncn.streamlit.app/
+
